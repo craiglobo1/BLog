@@ -1,38 +1,108 @@
-.App {
+body{
+  background-color: #FBFBF8;
+  padding: 2rem;
+}
+
+.center {
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 10%;
+    width: 50%;
+  }
+.notion-scroller{
+    position: relative;
+}
+li {
+  display: inline;
+  padding: 0.7rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a { 
+  border:none;
+  outline:none;
+  text-decoration:none;
+  color:inherit;
+  -webkit-tap-highlight-color: white;
+}
+.topnav{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  margin-bottom: 3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.divider {
+  width: 70.5%;
+  height: 10;
+  border-bottom: 1px solid black;
+  position: absolute;
+  margin-left: 12.5%;
+  margin-right: auto;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#logo{
+  width: 8%;
+  height: auto;
+  margin-left: 47%;
+}
+
+.title{
+  font-size:2rem;
+}
+.Home-desc{
+  position: relative;
+  overflow:auto; 
+  margin: auto;
+  width: 70%; 
+  /* background: gray; */
+}
+#myImg{
+  width: 40%;
+  height: auto;
+  float:left;
+  /* margin-left: 5%; */
+
+}
+
+.myInfo{ 
+  float:right;
+  /* width: 20%; */
+  padding: 3%;
+  height: 15%;
+  margin-top: 15%;
+  /* background-color: white; */
+} 
+
+.blogItem{
+  position: relative;
+  overflow:auto; 
+  margin: auto;
+  width: 70%; 
+  pointer-events:none;
+}
+
+.blogItem{
+  /* background-color: peachpuff; */
+  margin-bottom: 2rem;
+  width: 60rem;
+  height: 20rem;
+  border: 2px solid gainsboro;
+}
+.blogCoverImg{
+  float:left;
+  object-fit: cover;
+  width: 25rem;
+  height: 20rem;
+
+}
+
+.blogItemText{
+  float:right;
+  width: 30rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: center;
+  height: 20rem;
 }
