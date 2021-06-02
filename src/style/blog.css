@@ -1,11 +1,43 @@
 .blogView{
-    background-color: aqua;
+    /* background-color: aqua; */
+    width: 70vw;
+    margin: auto;
     display: grid;
+
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 97px 10px;
     grid-auto-rows: minmax(100px, auto);
+
+    align-items: center;
+    justify-items: center;
 }
 
 .blogItem{
-    background-color: red;
+    background-color: white;
+    width: 424px;
+    height: 471px;
+    border: 2px solid gray;
+    border-radius: 2%;
+}
+
+.blogItemText{
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid grey;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+}
+
+.blogCoverImg{
+    object-fit: cover;
+    width: 424px;
+    height: 315px;
+}
+
+@media (max-width:1250px) {
+    .blogView{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 }
