@@ -15,14 +15,14 @@ export class BlogItem extends Component {
         this.setState({link: path});
     }
     render() {
-        const { title, slug, coverImgUrl } = this.props.blog
+        const { title,id,coverImage } = this.props.blog
         if (this.state.redirect) {
             return <Redirect push to={this.state.link} />;
           }
         return (
-            <div className="BlogItemClick" onClick={() => this.redirect('/blogs/'+ slug)}>
+            <div className="BlogItemClick" onMouseDown ={() => this.redirect('/blogs/'+ (title === "" ? "empty" : id))}>
                 <div className="blogItem">
-                    {!(coverImgUrl === null || coverImgUrl === undefined) ? <img className="blogCoverImg" src={coverImgUrl} alt="" /> : <img className="blogCoverImg" src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/31b610c6-3a4a-446d-9969-b1d1ae51f8c2/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210524%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210524T073124Z&X-Amz-Expires=86400&X-Amz-Signature=2eaffadb145d6068c42f15d2ef48432a6aa67d046f3cda18343b28215afe0d8f&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22" alt="" />}
+                    {coverImage.files.length !== 0 ? <img className="blogCoverImg" src={coverImage.files[0].name} alt="" /> : <img className="blogCoverImg" src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F31b610c6-3a4a-446d-9969-b1d1ae51f8c2%2FUntitled.png?table=block&id=1cf0445d-6907-45ce-a108-e7b8e93e0a51&spaceId=027e1c2b-fb40-4815-a812-e373334d7a25&width=900&userId=6f951767-13bd-40af-8a2c-628936c7ac56&cache=v2" alt="" />}
                     <div className="blogItemText">
                         <h1>{title}</h1>
                     </div>

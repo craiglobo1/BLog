@@ -8,7 +8,7 @@ export class blogPage extends Component {
         return (
             <div>
                 <Header/>
-                <Page slug={slug} />
+                {slug === "empty" ? <></> :  <Page slug={slug} />}
             </div>
         )
     }

@@ -1,22 +1,16 @@
 body{
   background-color: #FBFBF8;
-  padding: 2rem;
 }
 
-.center {
-    position: absolute;
-    margin-left: 25%;
-    margin-top: 10%;
-    width: 50%;
-  }
-.notion-scroller{
-    position: relative;
+h1{
+  font-size: 2vw;
 }
-li {
-  display: inline;
-  padding: 0.7rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+h2{
+  font-weight: 100;
+  font-size: 1.2vw;
 }
+
 a { 
   border:none;
   outline:none;
@@ -24,54 +18,60 @@ a {
   color:inherit;
   -webkit-tap-highlight-color: white;
 }
+
+.header{
+  margin-bottom: 3vw;
+}
+
+/* header start */
+
+#logo{
+  width: 8vw;
+  height: auto;
+  margin: 1vw 47vw;
+}
+
+.divider {
+  width: 70vw;
+  border-bottom: 1px solid black;
+  margin-left: 15vw;
+}
+
 .topnav{
   text-align: center;
 }
 
-.header{
-  margin-bottom: 3rem;
+.topnav li {
+  display: inline;
+  padding: 0.7vw;
+  margin-left: 1vw;
+  /* background-color: red; */
+  font-size: 1.15vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.divider {
-  width: 70.5%;
-  height: 10;
-  border-bottom: 1px solid black;
-  position: absolute;
-  margin-left: 12.5%;
-  margin-right: auto;
-  
-}
 
-#logo{
-  width: 8%;
-  height: auto;
-  margin-left: 47%;
-}
+/* header end */
 
-.title{
-  font-size:2rem;
-}
 .Home-desc{
   position: relative;
   overflow:auto; 
   margin: auto;
   width: 70%; 
-  /* background: gray; */
 }
+
 #myImg{
-  width: 40%;
+  width: 20vw;
   height: auto;
   float:left;
-  /* margin-left: 5%; */
+  margin-left: 10vw;
 
 }
 
 .myInfo{ 
   float:right;
-  /* width: 20%; */
-  padding: 3%;
   height: 15%;
-  margin-top: 15%;
+  margin-top: 9vw;
   /* background-color: white; */
 } 
 
@@ -85,24 +85,39 @@ a {
 
 .blogItem{
   /* background-color: peachpuff; */
-  margin-bottom: 2rem;
-  width: 60rem;
-  height: 20rem;
+  
+  width: 60vw;
+  height: 20vw;
   border: 2px solid gainsboro;
 }
+.BlogItemClick{
+  margin-bottom: 2vw;
+  margin-left: 20vw;
+  width: 60vw;
+  height: 20vw;
+}
+
 .blogCoverImg{
   float:left;
   object-fit: cover;
-  width: 25rem;
-  height: 20rem;
+  width: 25vw;
+  height: 20vw;
 
 }
 
 .blogItemText{
   float:right;
-  width: 30rem;
+  width: 30vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20rem;
+  height: 20vw;
+}
+
+
+.loader{
+  overflow:auto; 
+  margin-left: 25%;
+  width: 50%; 
+  pointer-events:none;
 }

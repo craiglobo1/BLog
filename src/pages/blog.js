@@ -17,16 +17,18 @@ class Blog extends Component {
     }
 
     getItems() {
-      fetch("/api/v1/resources/blog/all")
+      fetch("https://craig-blog-api.herokuapp.com/api/v1/resources/blog/published")
         .then(response => response.json())
-        // .then(data => console.log(data))
-        .then(data => this.setState({'blogs' : data}));
+        .then(data => this.setState({'blogs' : data}))
+        .then(() => document.getElementsByClassName('loader'))
+        .then(img => img[0].style.display='none')
     }
 
     render() {
     return (
         <>
         <Header />
+        <img  className="loader" src="https://i.pinimg.com/originals/65/ba/48/65ba488626025cff82f091336fbf94bb.gif" alt="" />
         <div className="blogView">
           
             {this.state.blogs.map(function(blog, index){ 
