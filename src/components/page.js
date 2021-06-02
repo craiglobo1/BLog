@@ -1,5 +1,9 @@
 import { Component } from 'react';
-import NotionRender from './notionRender';
+import { NotionRenderer } from "react-notion";
+
+import "react-notion/src/styles.css";
+import "prismjs/themes/prism-tomorrow.css";
+
 
 class Page extends Component {
     constructor(props)
@@ -7,14 +11,24 @@ class Page extends Component {
        super(props)
        this.state = {
           innerHtml : null,
-          pageData : {"results":[]}
+          pageData : {"results":[]},
+          blockMap: {}
        }
     }
+
+    async componentDidMount() {
+        const { slug } = this.props
+        const blogData = await fetch(
+          `https://notion-api.splitbee.io/v1/page/${slug}`
+        ).then(res => res.json());
+    
+        this.setState({ blockMap: blogData })
+      }
  
     render() {
     return (
         <div className="Blog">
-            <NotionRender pgId={this.props.slug} />
+            <NotionRenderer fullPage blockMap={this.state.blockMap} />
         </div>
       );;
     }
