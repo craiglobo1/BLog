@@ -75,46 +75,6 @@ a {
   /* background-color: white; */
 } 
 
-.blogItem{
-  position: relative;
-  overflow:auto; 
-  margin: auto;
-  width: 70%; 
-  pointer-events:none;
-}
-
-.blogItem{
-  /* background-color: peachpuff; */
-  
-  width: 60vw;
-  height: 20vw;
-  border: 2px solid gainsboro;
-}
-.BlogItemClick{
-  margin-bottom: 2vw;
-  margin-left: 20vw;
-  width: 60vw;
-  height: 20vw;
-}
-
-.blogCoverImg{
-  float:left;
-  object-fit: cover;
-  width: 25vw;
-  height: 20vw;
-
-}
-
-.blogItemText{
-  float:right;
-  width: 30vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 20vw;
-}
-
-
 .loader{
   overflow:auto; 
   margin-left: 25%;
