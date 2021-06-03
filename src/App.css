@@ -6,22 +6,18 @@ body, html{
 }
 
 h1{
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 
 h2{
   font-size: 1.2rem;
 }
 
-.Home-desc h2{
-  font-weight: 100;
-}
-
 .Home-desc{
   position: relative;
   overflow:auto; 
   margin: auto;
-  width: 58vw;
+  width: 60vw;
 }
 
 #myImg{
@@ -34,17 +30,12 @@ h2{
 .myInfo{ 
   float:right;
   width: 36vw;
-  margin-top: 9vw;
 
 }
-
-.loader{
-  overflow:auto; 
-  margin-left: 25%;
-  width: 50%; 
-  pointer-events:none;
+.myInfo h2{
+  font-weight: 100;
+  font-size: 1.7rem;
 }
-
 
 
 @media (max-width:1295px) {

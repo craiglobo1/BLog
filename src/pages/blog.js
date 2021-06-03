@@ -2,7 +2,6 @@ import { Component } from 'react';
 import BlogItem from '../components/blogItem';
 import Header from '../components/header';
 import "../style/blog.css";
-import { NotionRenderer } from "react-notion";
 import "react-notion/src/styles.css";
 import "prismjs/themes/prism-tomorrow.css";
 

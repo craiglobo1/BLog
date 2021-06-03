@@ -1,5 +1,15 @@
 .header{
-    margin-bottom: 3vw;
+    display: flex;
+    align-items: center;
+    width: 65vw;
+    padding:1rem 0;
+    margin: 0 auto ;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #3C665F;
+
+}
+.header-wrapper{
+    width: 100vw;
 }
   
 /* header start */
@@ -9,33 +19,25 @@ border:none;
 outline:none;
 text-decoration:none;
 color:inherit;
--webkit-tap-highlight-color: white;
 }
 
-
-#logo{
-width: 8vw;
-height: auto;
-margin: 1vw 47vw;
-}
-
-.divider {
-width: 70vw;
-border-bottom: 1px solid black;
-margin-left: 15vw;
-}
 
 .topnav{
-text-align: center;
+    float: right;
+    margin-left: auto;
+}
+.logo{
+    float: left;
+
 }
 
 .topnav li {
-display: inline;
-padding: 0.7vw;
-margin-left: 1vw;
-/* background-color: red; */
-font-size: 1.15vw;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #3C665F;
+    display: inline;
+    padding: 0.7rem;
+    margin-left: 1vw;
+    font-size: 1.15rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 

@@ -1,10 +1,10 @@
 .blogView{
     /* background-color: aqua; */
-    width: 70vw;
+    width: 90vw;
     margin: 100px auto;
     display: grid;
 
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 97px 10px;
     grid-auto-rows: minmax(100px, auto);
 
@@ -14,18 +14,22 @@
 }
 
 .blogItem{
-    background-color: white;
+    /* background-color: white; */
+
+    margin: 3px; /* For shadow to work */
     width: 405px;
     height: 235px;
     border: 1px solid #bbbbbb;
     border-radius: 2%;
-    /* background-color: red; */
+    box-shadow: 2px 2px 5px  lightgray;
 }
 
 .blogItemText{
     margin: 0 auto;
     text-align: center;
-    /* background-color: green; */
+}
+.blogItemText h2{
+    font-weight: 500;
 }
 
 .blogCoverImg{
@@ -33,11 +37,29 @@
     object-fit: cover;
     width: 405px;
     height: 185px;
+    border-radius: 2% 2% 0 0;
 }
 
-@media (max-width:1250px) {
+.loader{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    pointer-events:none;
+}
+
+@media (max-width:1400px) {
+    .blogView{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width:975px) {
     .blogView{
         grid-template-columns: repeat(1, 1fr);
+        width: 90vw;
+
     }
 
 }
@@ -45,7 +67,7 @@
     .blogItem{
         background-color: white;
         width: 254.2px;
-        height: 282.6px;
+        height: 239px;
         border: 1px solid #bbbbbb;
         border-radius: 2%;
     }
