@@ -1,20 +1,17 @@
 import './App.css';
 import { Component } from 'react';  
-
 import {
    BrowserRouter as Router,
    Route,
    Switch,
    Redirect
 } from 'react-router-dom';
-
 //Pages
 import Home from './pages/home';
 import Blog  from './pages/blog';
 import ErrorPage  from './pages/errorPage';
 import About  from './pages/about';
 import blogPage from './pages/blogPage';
-
 class App extends Component {
    constructor(props)
    {
@@ -22,7 +19,6 @@ class App extends Component {
       this.state = {
       }
    }
-
    render() {
    return (
       <div className="App">
@@ -40,5 +36,4 @@ class App extends Component {
      );
    }
  }
-
 export default App;

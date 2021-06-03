@@ -1,0 +1,138 @@
+.circle {
+    position: absolute;
+    border-radius: 50%;
+}
+.one{
+background: rgba(100,100,255,0.3);
+width: 15vw;
+height: 15vw;
+z-index: 0;
+left: 21vw;
+top: 22vh;
+}
+
+.two{
+background: rgba(255, 100, 177, 0.459);
+width: 10.42vw;
+height: 10.42vw;
+z-index: 0;
+top: 46vh;
+left: 32vw;
+}
+
+.three{
+background: rgba(255, 204, 63, 0.356);
+width: 10.42vw;
+height: 10.42vw;
+z-index: 0;
+top: 58vh;
+left: 14vw;
+}
+
+
+.main{
+    position:fixed;
+    border-radius: 50%;
+    background: rgba(250, 176, 106, 0.226);
+    width: 67vw;
+    height: 2000%; 
+    overflow-y: scroll;
+    border-radius: 50.25vw 50.25vw 0 0;
+    z-index: 0;
+    left: 60vw;
+    top: 5vh;
+}
+
+
+@media (max-width:1295px) {
+    .one{
+        width: 200px;
+        height: 200px;
+        left: 42vw;
+        top: 71vh;
+    }
+    
+    .two{
+    width: 130px;
+    height: 130px;
+    left: 52vw;
+    top: 92vh;
+    }
+    
+    .three{
+    width: 130px;
+    height: 130px;
+    left: 38vw;
+    top: 98vh;
+    }
+}
+
+
+@media (max-width:1011px) {
+    .one{
+        display: none
+    }
+    
+    .two{
+        display: none
+    }
+    
+    .three{
+        display: none
+    }
+}
+
+@media (max-width:570px) {
+    .one{
+        display: block;
+        left: 32vw;
+        top: 88vh;
+    }
+    
+    .two{
+    display: block;
+    left: 55vw;
+    top: 113vh;
+    }
+    
+    .three{
+    display: block;
+    left: 22vw;
+    top: 121vh;
+    }
+}
+
+
+@media (max-width:446px) {
+    .one{
+        left: 28vw;
+        top: 104vh;
+    }
+    
+    .two{
+    left: 55vw;
+    top: 122vh;
+    }
+    
+    .three{
+    left: 18vw;
+    top: 134vh;
+    }
+}
+
+@media (max-width:376px) {
+    .one{
+        left: 28vw;
+        top: 118vh;
+    }
+    
+    .two{
+    left: 55vw;
+    top: 143vh;
+    }
+    
+    .three{
+    left: 18vw;
+    top: 152vh;
+    }
+}

@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import Header from '../components/header';
+import '../style/homeBg.css';
 // import Page from '../components/page';
 
 class Home extends Component {
@@ -18,14 +19,19 @@ class Home extends Component {
         <>
 
             <Header />
+            <div className="circle main"></div>
+            <div className="circle one"></div>
+            <div className="circle two"></div>
+            <div className="circle three"></div>
             <div className="Home-desc">
                 <div className="myInfo">
                     <h1 className="title" >Hey Guys —</h1>
                     <h2 className="para">I'm Craig. I'm a prospective computer science student with a passion for creating cool and fun innovative projects. </h2>
-                    <p>On this site I will explore different ideas I'm interested in, why is it so cool and  my passion for creating cool and fun innovative projects.</p>
+                    <p>On this site I explore different ideas that I'm interested in, check out why is these ideas are so amazing and my various different passions </p>
                 </div>
                 <div className="imgholder">
-                    <img id="myImg" alt="your pic" src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F097c71fe-22a6-4ee8-a0ae-a5fb101e30d0%2FIMG_5450_1.png?table=block&id=4ca2b9bb-ad1c-4aac-8f27-f8d364476d75&width=1250&userId=&cache=v2" />
+
+                    <img id="myImg" alt="your pic" src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F88980df7-756d-436f-b3a9-82896dd1e69e%2Fmy_web_picture.png?table=block&id=df7444dd-a92f-4969-af6e-1ef9ed11d3d4&spaceId=027e1c2b-fb40-4815-a812-e373334d7a25&width=1250&userId=6f951767-13bd-40af-8a2c-628936c7ac56&cache=v2" />
                 </div>
             </div>
         </>

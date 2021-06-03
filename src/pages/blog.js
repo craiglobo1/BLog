@@ -42,6 +42,7 @@ class Blog extends Component {
               return <BlogItem key={index} blog={blog} />
             })}
         </div>
+        <div className="circle main"></div>
 
         </>
       );;

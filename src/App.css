@@ -13,10 +13,11 @@ h2{
   font-size: 1.2rem;
 }
 
+
 .Home-desc{
   position: relative;
   overflow:auto; 
-  margin: auto;
+  margin: 4rem auto;
   width: 60vw;
 }
 
@@ -33,10 +34,28 @@ h2{
 
 }
 .myInfo h2{
-  font-weight: 100;
+  font-weight: 200;
   font-size: 1.7rem;
 }
+.myInfo p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* font-style: italic; */
+  font-size: 1.2rem;
+  font-weight: 100;
+}
 
+.main{
+  position:fixed;
+  border-radius: 50%;
+  background: rgba(250, 176, 106, 0.226);
+  width: 67vw;
+  height: 2000%; 
+  overflow-y: scroll;
+  border-radius: 50.25vw 50.25vw 0 0;
+  z-index: 0;
+  left: 60vw;
+  top: 5vh;
+}
 
 @media (max-width:1295px) {
   .Home-desc{
@@ -74,3 +93,4 @@ h2{
     width: 50vw;
   }
 }
+
