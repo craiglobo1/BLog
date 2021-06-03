@@ -10,51 +10,12 @@ h1{
 }
 
 h2{
-  font-weight: 100;
   font-size: 1.2rem;
 }
 
-a { 
-  border:none;
-  outline:none;
-  text-decoration:none;
-  color:inherit;
-  -webkit-tap-highlight-color: white;
+.Home-desc h2{
+  font-weight: 100;
 }
-
-.header{
-  margin-bottom: 3vw;
-}
-
-/* header start */
-
-#logo{
-  width: 8vw;
-  height: auto;
-  margin: 1vw 47vw;
-}
-
-.divider {
-  width: 70vw;
-  border-bottom: 1px solid black;
-  margin-left: 15vw;
-}
-
-.topnav{
-  text-align: center;
-}
-
-.topnav li {
-  display: inline;
-  padding: 0.7vw;
-  margin-left: 1vw;
-  /* background-color: red; */
-  font-size: 1.15vw;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-
-/* header end */
 
 .Home-desc{
   position: relative;

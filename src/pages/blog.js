@@ -2,18 +2,27 @@ import { Component } from 'react';
 import BlogItem from '../components/blogItem';
 import Header from '../components/header';
 import "../style/blog.css";
+import { NotionRenderer } from "react-notion";
+import "react-notion/src/styles.css";
+import "prismjs/themes/prism-tomorrow.css";
 
 class Blog extends Component {
     constructor(props)
     {
       super(props)
       this.state = {
-      'blogs' : []
+      'blogs' : [],
+      'blockMap':{}
       }
     }
 
-    componentDidMount(){
+    async componentDidMount(){
       this.getItems();
+      const blogData = await fetch(
+        `https://notion-api.splitbee.io/v1/page/cc1d0e5944544532932c36691a2ceaa3`
+      ).then(res => res.json());
+  
+      this.setState({ blockMap: blogData })
     }
 
     getItems() {
