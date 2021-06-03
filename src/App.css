@@ -1,5 +1,8 @@
-body{
+body, html{
   background-color: #FBFBF8;
+  max-width: 100%;
+  overflow-x: hidden;
+
 }
 
 h1{
@@ -8,7 +11,7 @@ h1{
 
 h2{
   font-weight: 100;
-  font-size: 1.2vw;
+  font-size: 1.2rem;
 }
 
 a { 
@@ -57,27 +60,65 @@ a {
   position: relative;
   overflow:auto; 
   margin: auto;
-  width: 70%; 
+  width: 58vw;
 }
 
 #myImg{
   width: 20vw;
   height: auto;
   float:left;
-  margin-left: 10vw;
 
 }
 
 .myInfo{ 
   float:right;
-  height: 15%;
+  width: 36vw;
   margin-top: 9vw;
-  /* background-color: white; */
-} 
+
+}
+
+
+@media (max-width:1295px) {
+  .Home-desc{
+    width: 70vw;
+    margin: auto;
+    display: grid;
+
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px 10px;
+    grid-auto-rows: minmax(100px, auto);
+
+    align-items: center;
+    justify-items: center;
+  }
+  .myInfo{ 
+    float:none;
+    height: 200px;
+    margin-top: 0;
+  
+  }
+
+  #myImg{
+    float:none;
+    justify-content: center;
+    width: 218px;
+    height: 348px;
+  }
+
+
+
+}
 
 .loader{
   overflow:auto; 
   margin-left: 25%;
   width: 50%; 
   pointer-events:none;
+}
+
+
+@media (max-width:605px) {
+  .myInfo{ 
+    height: 270px; 
+  }
 }
