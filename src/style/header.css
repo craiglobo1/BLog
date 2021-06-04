@@ -42,4 +42,10 @@ color:inherit;
 
 
 /* header end */
-  
+
+@media(max-width:550px) {
+    .topnav{
+        display: none;
+    }
+    
+}

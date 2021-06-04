@@ -19,6 +19,8 @@ h2{
   overflow:auto; 
   margin: 4rem auto;
   width: 60vw;
+  pointer-events: none;
+
 }
 
 #myImg{
@@ -31,6 +33,7 @@ h2{
 .myInfo{ 
   float:right;
   width: 36vw;
+
 
 }
 .myInfo h2{
